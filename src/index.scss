@@ -1,0 +1,19 @@
+@import "./assets/style/_variables.scss";
+@import "./assets/style/font.scss";
+@import "./assets/style/_mixin.scss";
+@import "./components/Navbar/Navbar.scss";
+@import "./components/Main/MainContent.scss";
+@import "./components/Slider/GallerySlider.scss";
+@import "./components/Footer/Footer.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: initial;
+  max-height: 100%;
+  background: $backColor;
+}
+.main_app {
+  padding: 0px 30px;
+  height: 100vh;
+}
