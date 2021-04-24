@@ -1,6 +1,7 @@
 .navbar_content {
   font-family: "Poppins-SemiBold";
-  padding-top: 1em;
+  padding: 1em 3em;
+  height: 5vh;
 
   @include media(mobile, tablet) {
     .navbar_content-items {
@@ -14,7 +15,7 @@
       z-index: 1;
 
       .toggler {
-        background: rgba($color: #000000, $alpha: 1);
+        background: inherit;
         padding: 0.4em 1em;
         opacity: 0;
         width: 50px;
@@ -29,7 +30,7 @@
           + .hamburger {
             > div {
               transform: rotate(135deg);
-              background: $whiteColor;
+              background: inherit;
 
               &::before,
               &::after {
@@ -73,7 +74,7 @@
         width: 40px;
         height: 40px;
         padding: 1em;
-        background: rgba($color: #000000, $alpha: 0);
+        background: inherit;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -82,7 +83,7 @@
           position: relative;
           width: 100%;
           height: 2px;
-          background: $blackColor;
+          background: inherit;
           display: flex;
           flex: none;
           justify-content: center;
@@ -138,16 +139,21 @@
 
             ul {
               li {
+                color: $whiteColor;
                 list-style: none;
-                color: #fff;
                 font-size: 1.5rem;
                 padding: 1rem;
 
                 a {
-                  color: $whiteColor;
                   text-decoration: none;
                   transition: color 0.4s ease;
                   z-index: 4;
+
+                  &:link,
+                  &:focus,
+                  &:visited {
+                    color: inherit;
+                  }
                 }
               }
             }
@@ -167,13 +173,19 @@
       display: flex !important;
       flex-direction: row;
       justify-content: flex-end;
+      margin: 0;
 
       li {
         padding: 10px 20px;
 
         a {
-          color: $blackColor;
           text-decoration: none;
+
+          &:link,
+          &:focus,
+          &:visited {
+            color: inherit;
+          }
         }
         .fa-search,
         .fa-shopping-cart {

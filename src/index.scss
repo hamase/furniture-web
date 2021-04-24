@@ -5,15 +5,24 @@
 @import "./components/Main/MainContent.scss";
 @import "./components/Slider/GallerySlider.scss";
 @import "./components/Footer/Footer.scss";
+@import "./components/ThemeToggle.scss";
 
+/* override browser default */
+html,
 body {
   margin: 0;
   padding: 0;
-  box-sizing: initial;
-  max-height: 100%;
-  background: $backColor;
 }
-.main_app {
-  padding: 0px 30px;
+
+/* use viewport-relative units to cover page fully */
+body {
+  max-height: 100%;
+  // background: $backColor;
   height: 100vh;
+  width: 100vw;
+}
+
+/* include border and padding in element width and height */
+* {
+  box-sizing: inherit;
 }

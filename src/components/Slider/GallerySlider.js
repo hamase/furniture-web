@@ -8,82 +8,161 @@ import Office1 from "../../assets/img/office-1.jpg";
 
 const GallerySlider = () => {
   return (
-    <Carousel showArrows showThumbs={false} autoPlay={false} showStatus={false}>
-      {/* three items in every li */}
-      <div>
-        <a href="#" className="slide_item">
-          <img src={Bar1} alt="" />
-          <div className="desc_box">
-            <p>Bruno Crush</p>
-            <p>$160.00</p>
-          </div>
-        </a>
-        <a href="#" className="slide_item">
-          <img src={Chair1} alt="" />
-          <div className="desc_box">
-            <p>Bruno Crush</p>
-            <p>$160.00</p>
-          </div>
-        </a>
-        <a href="#" className="slide_item">
-          <img src={Office1} alt="" />
-          <div className="desc_box">
-            <p>Bruno Crush</p>
-            <p>$160.00</p>
-          </div>
-        </a>
-      </div>
+    <>
+      <Carousel
+        showArrows
+        showThumbs={false}
+        autoPlay={false}
+        showStatus={false}
+        className="carousel_desktop"
+      >
+        {/* three items in every li */}
+        <div>
+          <a href="#" className="slide_item">
+            <img src={Bar1} alt="" />
+            <div className="desc_box">
+              <p>Bruno Crush</p>
+              <p>$160.00</p>
+            </div>
+          </a>
+          <a href="#" className="slide_item">
+            <img src={Chair1} alt="" />
+            <div className="desc_box">
+              <p>Bruno Crush</p>
+              <p>$160.00</p>
+            </div>
+          </a>
+          <a href="#" className="slide_item">
+            <img src={Office1} alt="" />
+            <div className="desc_box">
+              <p>Bruno Crush</p>
+              <p>$160.00</p>
+            </div>
+          </a>
+        </div>
 
-      {/* three items in every li */}
-      <div>
-        <a href="#" className="slide_item">
-          <img src={Bar1} />
-          <div className="desc_box">
-            <p>Bruno Crush</p>
-            <p>$160.00</p>
-          </div>
-        </a>
-        <a href="#" className="slide_item">
-          <img src={Chair1} />
-          <div className="desc_box">
-            <p>Bruno Crush</p>
-            <p>$160.00</p>
-          </div>
-        </a>
-        <a href="#" className="slide_item">
-          <img src={Office1} />
-          <div className="desc_box">
-            <p>Bruno Crush</p>
-            <p>$160.00</p>
-          </div>
-        </a>
-      </div>
+        {/* three items in every li */}
+        <div>
+          <a href="#" className="slide_item">
+            <img src={Bar1} />
+            <div className="desc_box">
+              <p>Bruno Crush</p>
+              <p>$160.00</p>
+            </div>
+          </a>
+          <a href="#" className="slide_item">
+            <img src={Chair1} />
+            <div className="desc_box">
+              <p>Bruno Crush</p>
+              <p>$160.00</p>
+            </div>
+          </a>
+          <a href="#" className="slide_item">
+            <img src={Office1} />
+            <div className="desc_box">
+              <p>Bruno Crush</p>
+              <p>$160.00</p>
+            </div>
+          </a>
+        </div>
 
-      {/* three items in every li */}
-      <div>
-        <a href="#" className="slide_item">
-          <img src={Bar1} />
-          <div className="desc_box">
-            <p>Bruno Crush</p>
-            <p>$160.00</p>
-          </div>
-        </a>
-        <a href="#" className="slide_item">
-          <img src={Chair1} />
-          <div className="desc_box">
-            <p>Bruno Crush</p>
-            <p>$160.00</p>
-          </div>
-        </a>
-        <a href="#" className="slide_item">
-          <img src={Office1} />
-          <div className="desc_box">
-            <p>Bruno Crush</p>
-            <p>$160.00</p>
-          </div>
-        </a>
-      </div>
-    </Carousel>
+        {/* three items in every li */}
+        <div>
+          <a href="#" className="slide_item">
+            <img src={Bar1} />
+            <div className="desc_box">
+              <p>Bruno Crush</p>
+              <p>$160.00</p>
+            </div>
+          </a>
+          <a href="#" className="slide_item">
+            <img src={Chair1} />
+            <div className="desc_box">
+              <p>Bruno Crush</p>
+              <p>$160.00</p>
+            </div>
+          </a>
+          <a href="#" className="slide_item">
+            <img src={Office1} />
+            <div className="desc_box">
+              <p>Bruno Crush</p>
+              <p>$160.00</p>
+            </div>
+          </a>
+        </div>
+      </Carousel>
+      <Carousel
+        showArrows
+        showThumbs={false}
+        autoPlay={false}
+        showStatus={false}
+        className="carousel_mobile"
+      >
+        {/* one items in every li */}
+        <div>
+          <a href="#" className="slide_item">
+            <img src={Bar1} alt="" />
+            <div className="desc_box">
+              <p>Bruno Crush</p>
+              <p>$160.00</p>
+            </div>
+          </a>
+        </div>
+
+        {/* one items in every li */}
+        <div>
+          <a href="#" className="slide_item">
+            <img src={Chair1} />
+            <div className="desc_box">
+              <p>Bruno Crush</p>
+              <p>$160.00</p>
+            </div>
+          </a>
+        </div>
+
+        {/* one items in every li */}
+        <div>
+          <a href="#" className="slide_item">
+            <img src={Office1} />
+            <div className="desc_box">
+              <p>Bruno Crush</p>
+              <p>$160.00</p>
+            </div>
+          </a>
+        </div>
+        <div>
+          <a href="#" className="slide_item">
+            <img src={Bar1} alt="" />
+            <div className="desc_box">
+              <p>Bruno Crush</p>
+              <p>$160.00</p>
+            </div>
+          </a>
+        </div>
+
+        {/* one items in every li */}
+        <div>
+          <a href="#" className="slide_item">
+            <img src={Chair1} />
+            <div className="desc_box">
+              <p>Bruno Crush</p>
+              <p>$160.00</p>
+            </div>
+          </a>
+        </div>
+
+        {/* one items in every li */}
+        <div>
+          <a href="#" className="slide_item">
+            <img src={Office1} />
+            <div className="desc_box">
+              <p>Bruno Crush</p>
+              <p>$160.00</p>
+            </div>
+          </a>
+        </div>
+      </Carousel>
+    </>
   );
 };
 
